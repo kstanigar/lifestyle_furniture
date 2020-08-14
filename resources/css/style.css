@@ -1502,11 +1502,11 @@ body {
     background-color: #eee;
     position: fixed;
     top: 20%;
-    left: 0%;
+    right: 0%;
     opacity: 0;
-    -webkit-transform: translate(-50%);
-        -ms-transform: translate(-50%);
-            transform: translate(-50%);
+    -webkit-transform: translate(50%);
+        -ms-transform: translate(50%);
+            transform: translate(50%);
     z-index: 1000;
     padding: 2rem;
     border: 0.1rem solid #3459af;
@@ -1619,11 +1619,10 @@ body {
     display: block;
 }
 #show-hide-forms:checked ~ .forms-wrapper {
-    left: 50%;
+    right: 50%;
     opacity: 1;
     pointer-events: initial;
 }
-
 #show-hide-forms:checked ~ .container {
     pointer-events: none;
     opacity: 0.6;
@@ -2299,6 +2298,11 @@ body {
         -o-object-fit: fill;
            object-fit: fill;
     } 
+    .form-btn {
+        /* padding: 3rem; */
+        width: 10rem;
+
+    }
 }
 
 
