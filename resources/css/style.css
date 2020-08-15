@@ -1064,25 +1064,61 @@ body {
     color: #34598f;
     text-align: center;
 }
-.day-offer-btn {
+.button-container {
     grid-column: 3 /-1;
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3 / 4;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5rem;
+    -webkit-box-shadow: 0.2rem 0.2rem 1rem #777;
+            box-shadow: 0.2rem 0.2rem 1rem #777;
+}
+.day-offer-btn {
     width: 16rem;
     padding: 1rem;
     font-size: 1.4rem;
     color: #fff;
-    background: -webkit-gradient(linear, left bottom, left top, from(#00154c), color-stop(#12376e), to(#23487f));
     background: -o-linear-gradient(bottom, #00154c, #12376e, #23487f);
+    background: -webkit-gradient(linear, left bottom, left top, from(#00154c), color-stop(#12376e), to(#23487f));
     background: linear-gradient(to top, #00154c, #12376e, #23487f);
     border: none;
     border-radius: 5rem;
     text-transform: uppercase;
     outline: none;
-    -webkit-box-shadow: 0.2rem 0.2rem 1rem #777;
-            box-shadow: 0.2rem 0.2rem 1rem #777;
     cursor: pointer;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    overflow: hidden;
+}
+.day-offer-btn::before,
+.day-offer-btn::after {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+    height: 80px;
+    width: 8px;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: left bottom;
+        -ms-transform-origin: left bottom;
+            transform-origin: left bottom;
+    -webkit-animation: shine 5s ease-in forwards infinite;
+            animation: shine 5s ease-in forwards infinite;
+}
+.day-offer-btn::after {
+    width: 4px;
+    left: 0%;
+    -webkit-animation: shine-2 5s ease-in 0.14s forwards infinite;
+            animation: shine-2 5s ease-in 0.14s forwards infinite;
 }
 .day-offer-btn:hover {
     -webkit-box-shadow: 0.2rem 0.2rem 2rem #777;
@@ -1096,6 +1132,29 @@ body {
     -ms-grid-row-align: end;
         align-self: end; 
 }
+/* Day offer btton animation */
+@keyframes shine {
+    0% {
+      transform: skewX(-45deg) translateX(-500%);
+    }
+    12% {
+      transform: skewX(-45deg) translateX(1500%);
+    }
+    100% {
+      transform: skewX(-45deg) translateX(1500%);
+    }
+  }
+  @keyframes shine-2 {
+    0% {
+      transform: skewX(-45deg) translateX(-525%);
+    }
+    10% {
+      transform: skewX(-45deg) translateX(3000%);
+    }
+    100% {
+      transform: skewX(-45deg) translateX(3000%);
+    }
+  }
 /* End of Day Offer */
 
 /* Bestselling Section */
