@@ -1134,26 +1134,60 @@ body {
         align-self: end; 
 }
 /* Day offer btton animation */
-@keyframes shine {
+@-webkit-keyframes shine {
     0% {
-      transform: skewX(-45deg) translateX(-500%);
+      -webkit-transform: skewX(-45deg) translateX(-500%);
+              transform: skewX(-45deg) translateX(-500%);
     }
     12% {
-      transform: skewX(-45deg) translateX(2000%);
+      -webkit-transform: skewX(-45deg) translateX(2000%);
+              transform: skewX(-45deg) translateX(2000%);
     }
     100% {
-      transform: skewX(-45deg) translateX(2000%);
+      -webkit-transform: skewX(-45deg) translateX(2000%);
+              transform: skewX(-45deg) translateX(2000%);
+    }
+  }
+  @keyframes shine {
+    0% {
+      -webkit-transform: skewX(-45deg) translateX(-500%);
+              transform: skewX(-45deg) translateX(-500%);
+    }
+    12% {
+      -webkit-transform: skewX(-45deg) translateX(2000%);
+              transform: skewX(-45deg) translateX(2000%);
+    }
+    100% {
+      -webkit-transform: skewX(-45deg) translateX(2000%);
+              transform: skewX(-45deg) translateX(2000%);
+    }
+  }
+  @-webkit-keyframes shine-2 {
+    0% {
+      -webkit-transform: skewX(-45deg) translateX(-525%);
+              transform: skewX(-45deg) translateX(-525%);
+    }
+    10% {
+      -webkit-transform: skewX(-45deg) translateX(4000%);
+              transform: skewX(-45deg) translateX(4000%);
+    }
+    100% {
+      -webkit-transform: skewX(-45deg) translateX(4000%);
+              transform: skewX(-45deg) translateX(4000%);
     }
   }
   @keyframes shine-2 {
     0% {
-      transform: skewX(-45deg) translateX(-525%);
+      -webkit-transform: skewX(-45deg) translateX(-525%);
+              transform: skewX(-45deg) translateX(-525%);
     }
     10% {
-      transform: skewX(-45deg) translateX(4000%);
+      -webkit-transform: skewX(-45deg) translateX(4000%);
+              transform: skewX(-45deg) translateX(4000%);
     }
     100% {
-      transform: skewX(-45deg) translateX(4000%);
+      -webkit-transform: skewX(-45deg) translateX(4000%);
+              transform: skewX(-45deg) translateX(4000%);
     }
   }
 /* End of Day Offer */
@@ -2308,6 +2342,9 @@ body {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
+    }
+    .first-nav-link i {
+        margin-right: 0rem;
     }
     
     .forms-wrapper form {
