@@ -1080,6 +1080,7 @@ body {
     width: 16rem;
     padding: 1rem;
     font-size: 1.4rem;
+    height: 100%;
     color: #fff;
     background: -o-linear-gradient(bottom, #00154c, #12376e, #23487f);
     background: -webkit-gradient(linear, left bottom, left top, from(#00154c), color-stop(#12376e), to(#23487f));
@@ -1138,10 +1139,10 @@ body {
       transform: skewX(-45deg) translateX(-500%);
     }
     12% {
-      transform: skewX(-45deg) translateX(1500%);
+      transform: skewX(-45deg) translateX(2000%);
     }
     100% {
-      transform: skewX(-45deg) translateX(1500%);
+      transform: skewX(-45deg) translateX(2000%);
     }
   }
   @keyframes shine-2 {
@@ -1149,10 +1150,10 @@ body {
       transform: skewX(-45deg) translateX(-525%);
     }
     10% {
-      transform: skewX(-45deg) translateX(3000%);
+      transform: skewX(-45deg) translateX(4000%);
     }
     100% {
-      transform: skewX(-45deg) translateX(3000%);
+      transform: skewX(-45deg) translateX(4000%);
     }
   }
 /* End of Day Offer */
